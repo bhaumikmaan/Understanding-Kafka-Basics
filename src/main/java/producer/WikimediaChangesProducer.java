@@ -33,5 +33,7 @@ public class WikimediaChangesProducer {
         eventSource.start();
         // we produce for 10 minutes and block the program until then
         TimeUnit.MINUTES.sleep(10);
+
+        // Test -> kafka-console-consumer --bootstrap-server localhost:9092 --topic wikimedia.recentchange || See Prodcuer Logs
     }
 }
